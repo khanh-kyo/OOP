@@ -10,14 +10,24 @@ import java.util.*;
  * @author KhanhKyo
  */
 public class Main {
-     public static void main(String[] args) {
-         
-         Scanner sc = new Scanner(System.in);
-		String[] worker = new String[10];
-                int[] salary = new int[10];
-		for (int i = 0; i < 10; i++) {
-		
-		}
-     }
+    public static void main(String[] args) {
+        scan scan = new scan();
+        Object[][] workerInfor = scan.scanWorker();
+        
+    }
+}
+class scan {
+    Scanner worker = new Scanner(System.in);
     
+    public Object[][] scanWorker() {
+        Object[][] workers = new Object[10][2];
+        
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Nhap ten va luong của thanh vien thu "+ (i+1) +":");
+            workers[i][0] = worker.next();
+            workers[i][1] = worker.nextInt();
+    
+        }
+        return workers;
+    }
 }
