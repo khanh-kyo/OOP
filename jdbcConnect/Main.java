@@ -16,7 +16,7 @@ public class Main {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.print("ba");
+        
         DatabaseConnect dc = new DatabaseConnect("localhost", "demo", "root", "");
 
         Connection connection = null;
@@ -40,7 +40,7 @@ public class Main {
             System.out.print("aa");
         } finally {
             // close connections,...
-            close(connection , statement, resultSet);
+//            close(connection , statement, resultSet);
         }
 
     }
